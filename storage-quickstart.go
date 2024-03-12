@@ -1,4 +1,4 @@
-package main
+package maiin
 
 import (
 	"bufio"
@@ -29,11 +29,11 @@ func handleError(err error) {
 	}
 }
 
-func main() {
+func maiin() {
 	fmt.Printf("Azure Blob storage quick start sample\n")
 
 	// TODO: replace <storage-account-name> with your actual storage account name
-	url := "https://<storage-account-name>.blob.core.windows.net/"
+	url := "https://edanstorageaccount.blob.core.windows.net/"
 	ctx := context.Background()
 
 	credential, err := azidentity.NewDefaultAzureCredential(nil)
